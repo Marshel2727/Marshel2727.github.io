@@ -1,15 +1,18 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project | Portofolio Saya</title>
+    <title>Project | Marshel Web Developer</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!-- Header & Navigasi -->
     <header class="site-header">
         <nav class="navbar container" aria-label="Navigasi utama">
-            <a class="brand" href="index.html">Portofolio.</a>
+            <a class="brand" href="index.html">
+                Marshel<span class="brand-dot">.</span>
+            </a>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -20,13 +23,124 @@
     </header>
 
     <main>
-        <section class="page-intro">
-            <div class="intro-content container">
-                <p class="eyebrow">Karya pilihan</p>
-                <h1>Project Saya</h1>
-                <p class="lead">Kumpulan project dan hasil karya saya akan ditampilkan di sini.</p>
+        <!-- Page Header -->
+        <section class="section section-alt" style="padding-block: 60px 40px;">
+            <div class="container section-header" style="margin-bottom: 0;">
+                <div class="badge" style="margin-bottom: 12px;">Portofolio Karya</div>
+                <h1 class="section-title">Kumpulan Project</h1>
+                <p class="section-desc">Eksplorasi berbagai proyek website dan implementasi kode yang telah saya kembangkan.</p>
+            </div>
+        </section>
+
+        <!-- Projects Grid Section -->
+        <section class="section">
+            <div class="container">
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <article class="project-card">
+                        <div class="project-banner">🌐</div>
+                        <div class="project-body">
+                            <div class="project-tags">
+                                <span class="tag">HTML5</span>
+                                <span class="tag">CSS3</span>
+                                <span class="tag">GitHub Pages</span>
+                            </div>
+                            <h3 class="project-title">Website Portofolio Pribadi</h3>
+                            <p class="project-desc">
+                                Website profil interaktif multi-halaman dengan desain modern berbasis tema warm latte & espresso. Sepenuhnya responsif di semua perangkat dan di-hosting langsung di GitHub Pages.
+                            </p>
+                            <div class="project-footer">
+                                <span class="badge" style="font-size: 0.75rem;">Status: Live</span>
+                                <a href="index.html" class="project-link">Lihat Halaman →</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="project-card">
+                        <div class="project-banner">🛍️</div>
+                        <div class="project-body">
+                            <div class="project-tags">
+                                <span class="tag">Web Design</span>
+                                <span class="tag">CSS Grid</span>
+                                <span class="tag">UI/UX</span>
+                            </div>
+                            <h3 class="project-title">E-Commerce Product Showcase</h3>
+                            <p class="project-desc">
+                                Konsep katalog produk toko online modern dengan tata letak grid yang rapi, tombol call-to-action yang jelas, dan efek hover interaktif untuk meningkatkan pengalaman belanja pengguna.
+                            </p>
+                            <div class="project-footer">
+                                <span class="badge" style="font-size: 0.75rem;">Desain Web</span>
+                                <span class="project-link" style="color: var(--text-muted);">Proyek Konsep</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 3 -->
+                    <article class="project-card">
+                        <div class="project-banner">📝</div>
+                        <div class="project-body">
+                            <div class="project-tags">
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">DOM</span>
+                                <span class="tag">Interactive</span>
+                            </div>
+                            <h3 class="project-title">Aplikasi Task Management</h3>
+                            <p class="project-desc">
+                                Aplikasi web pencatatan tugas harian sederhana dengan fitur penambahan kegiatan, status selesai (checklist), dan antarmuka yang bersih untuk produktivitas kerja harian.
+                            </p>
+                            <div class="project-footer">
+                                <span class="badge" style="font-size: 0.75rem;">Aplikasi Web</span>
+                                <span class="project-link" style="color: var(--text-muted);">Latihan Frontend</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 4 -->
+                    <article class="project-card">
+                        <div class="project-banner">🚀</div>
+                        <div class="project-body">
+                            <div class="project-tags">
+                                <span class="tag">Landing Page</span>
+                                <span class="tag">Responsive</span>
+                                <span class="tag">Flexbox</span>
+                            </div>
+                            <h3 class="project-title">Digital Product Landing Page</h3>
+                            <p class="project-desc">
+                                Landing page promosi produk digital dengan penekanan pada copywriting yang menarik, tipografi elegan, dan tata letak berorientasi konversi yang cepat diakses.
+                            </p>
+                            <div class="project-footer">
+                                <span class="badge" style="font-size: 0.75rem;">Landing Page</span>
+                                <span class="project-link" style="color: var(--text-muted);">Desain Responsif</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Call to Action Banner -->
+                <div style="margin-top: 60px; background: var(--surface-alt); padding: 48px; border-radius: var(--radius); border: 1px solid var(--border); text-align: center;">
+                    <h3 style="font-family: Georgia, serif; font-size: 1.8rem; margin-bottom: 12px; color: var(--espresso);">Punya Ide Proyek Menarik?</h3>
+                    <p style="color: var(--text-muted); max-width: 540px; margin-inline: auto; margin-bottom: 24px;">
+                        Saya selalu terbuka untuk berdiskusi, belajar hal baru, dan berkolaborasi dalam proyek pemrograman web.
+                    </p>
+                    <a href="contact.html" class="button">Hubungi Saya Sekarang</a>
+                </div>
             </div>
         </section>
     </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <p class="footer-text">© 2026 Marshel. Hak Cipta Dilindungi.</p>
+            <ul class="footer-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="project.html">Project</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="https://github.com/Marshel2727" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>

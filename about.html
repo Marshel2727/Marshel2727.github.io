@@ -1,15 +1,18 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About | Portofolio Saya</title>
+    <title>About | Marshel Web Developer</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!-- Header & Navigasi -->
     <header class="site-header">
         <nav class="navbar container" aria-label="Navigasi utama">
-            <a class="brand" href="index.html">Portofolio.</a>
+            <a class="brand" href="index.html">
+                Marshel<span class="brand-dot">.</span>
+            </a>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a class="active" href="about.html" aria-current="page">About</a></li>
@@ -20,13 +23,119 @@
     </header>
 
     <main>
-        <section class="page-intro">
-            <div class="intro-content container">
-                <p class="eyebrow">Kenali saya</p>
-                <h1>Tentang Saya</h1>
-                <p class="lead">Informasi mengenai profil, kemampuan, dan perjalanan saya akan ditampilkan di sini.</p>
+        <!-- Page Header -->
+        <section class="section section-alt" style="padding-block: 60px 40px;">
+            <div class="container section-header" style="margin-bottom: 0;">
+                <div class="badge" style="margin-bottom: 12px;">Profil Lengkap</div>
+                <h1 class="section-title">Tentang Saya</h1>
+                <p class="section-desc">Mengenal lebih dalam mengenai latar belakang, keahlian, dan perjalanan saya dalam dunia teknologi web.</p>
+            </div>
+        </section>
+
+        <!-- About Content Section -->
+        <section class="section">
+            <div class="container about-hero">
+                <!-- Sisi Kiri: Foto Profil & Info Cepat -->
+                <div>
+                    <div class="profile-card" style="margin-bottom: 24px;">
+                        <img src="assets/images/profile.png" alt="Foto Marshel" class="profile-img" style="width: 100%; height: 360px;">
+                    </div>
+
+                    <div class="stat-card" style="text-align: left; padding: 24px;">
+                        <h4 style="font-size: 1.1rem; margin-bottom: 16px; color: var(--espresso);">Biodata Singkat</h4>
+                        <div style="display: flex; flex-direction: column; gap: 12px;">
+                            <div>
+                                <p class="info-item-label">Nama Lengkap</p>
+                                <p class="info-item-value">Marshel</p>
+                            </div>
+                            <div>
+                                <p class="info-item-label">Status</p>
+                                <p class="info-item-value">Mahasiswa & Web Developer</p>
+                            </div>
+                            <div>
+                                <p class="info-item-label">Lokasi</p>
+                                <p class="info-item-value">Indonesia</p>
+                            </div>
+                            <div>
+                                <p class="info-item-label">GitHub</p>
+                                <p class="info-item-value"><a href="https://github.com/Marshel2727" target="_blank" style="color: var(--latte-dark);">@Marshel2727</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sisi Kanan: Bio & Perjalanan -->
+                <div style="display: flex; flex-direction: column; gap: 30px;">
+                    <div class="about-bio-card">
+                        <h2>Halo! Saya Marshel</h2>
+                        <p>
+                            Saya adalah seorang pengembang web pemula yang memiliki antusiasme tinggi di bidang pemrograman web dan desain antarmuka pengguna (*user interface*). Bagi saya, pemrograman bukan hanya sekadar menulis kode, melainkan seni menciptakan solusi digital yang bermanfaat dan nyaman digunakan oleh banyak orang.
+                        </p>
+                        <p>
+                            Fokus utama saya saat ini adalah mendalami teknologi **Frontend Web Development** dengan menguasai HTML5 semantik, CSS3 modern (Flexbox, Grid, Custom Properties), dan JavaScript. Saya selalu berusaha menghasilkan kode yang bersih, terstruktur rapi, serta memastikan tampilan website dapat diakses dengan sempurna dari berbagai ukuran layar.
+                        </p>
+
+                        <div class="info-list">
+                            <div>
+                                <p class="info-item-label">Minat Utama</p>
+                                <p class="info-item-value">Frontend Dev & UI Design</p>
+                            </div>
+                            <div>
+                                <p class="info-item-label">Alat Kerja</p>
+                                <p class="info-item-value">VS Code, Git, GitHub, Chrome DevTools</p>
+                            </div>
+                            <div>
+                                <p class="info-item-label">Bahasa Pemrograman</p>
+                                <p class="info-item-value">HTML5, CSS3, JavaScript</p>
+                            </div>
+                            <div>
+                                <p class="info-item-label">Pendekatan Desain</p>
+                                <p class="info-item-value">Responsive & Mobile-First</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Riwayat Pendidikan & Perjalanan -->
+                    <div class="about-bio-card">
+                        <h2>Perjalanan & Pendidikan</h2>
+                        <div class="timeline" style="margin-top: 24px;">
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <p class="timeline-date">2026</p>
+                                <h3 class="timeline-title">Publikasi Portofolio Digital</h3>
+                                <p class="timeline-desc">Membangun website portofolio interaktif dan mempublikasikannya secara live menggunakan GitHub Pages.</p>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <p class="timeline-date">2025 - 2026</p>
+                                <h3 class="timeline-title">Eksplorasi Proyek Pemrograman Web</h3>
+                                <p class="timeline-desc">Mengerjakan berbagai tugas studi, latihan membuat website responsif, dan mempelajari struktur kode yang efisien.</p>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <p class="timeline-date">2024 - Sekarang</p>
+                                <h3 class="timeline-title">Studi Teknologi Informasi / Komputer</h3>
+                                <p class="timeline-desc">Mempelajari dasar-dasar ilmu komputer, algoritma pemrograman, dan rekayasa perangkat lunak.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <p class="footer-text">© 2026 Marshel. Hak Cipta Dilindungi.</p>
+            <ul class="footer-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="project.html">Project</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="https://github.com/Marshel2727" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>

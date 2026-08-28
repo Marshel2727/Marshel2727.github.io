@@ -1,15 +1,18 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio Saya</title>
+    <title>Marshel | Portofolio Web Developer</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!-- Header & Navigasi -->
     <header class="site-header">
         <nav class="navbar container" aria-label="Navigasi utama">
-            <a class="brand" href="index.html">Portofolio.</a>
+            <a class="brand" href="index.html">
+                Marshel<span class="brand-dot">.</span>
+            </a>
             <ul class="nav-links">
                 <li><a class="active" href="index.html" aria-current="page">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -20,13 +23,190 @@
     </header>
 
     <main>
-        <section class="page-intro">
-            <div class="intro-content container">
-                <p class="eyebrow">Selamat datang</p>
-                <h1>Portofolio Saya</h1>
-                <p class="lead">Tempat untuk memperkenalkan diri, karya, dan pengalaman saya.</p>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <div class="badge">
+                        <span class="badge-dot"></span>
+                        Terbuka untuk Kolaborasi & Proyek Baru
+                    </div>
+                    <h1 class="hero-title">Halo, Saya <span>Marshel</span> 👋</h1>
+                    <p class="hero-subtitle">Web Developer & Tech Enthusiast</p>
+                    <p class="hero-description">
+                        Selamat datang di website portofolio pribadi saya! Saya berfokus pada pembuatan antarmuka web yang modern, interaktif, responsif, dan mudah digunakan.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="project.html" class="button">
+                            Lihat Project Saya <span>→</span>
+                        </a>
+                        <a href="contact.html" class="button button-outline">
+                            Hubungi Saya
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-image-wrapper">
+                    <div class="profile-card">
+                        <img src="assets/images/profile.png" alt="Foto Profil Marshel" class="profile-img">
+                        <div class="profile-floating-badge">
+                            <span class="floating-icon">💻</span>
+                            <div>
+                                <p class="floating-text-title">Fokus Keahlian</p>
+                                <p class="floating-text-desc">Frontend Web Dev</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="section" style="padding-top: 0;">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number">4+</div>
+                        <div class="stat-label">Halaman Web Terstruktur</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Desain Responsif & Modern</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">Git</div>
+                        <div class="stat-label">Version Control & GitHub Live</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Projects Section -->
+        <section class="section section-alt">
+            <div class="container">
+                <div class="section-header">
+                    <div class="badge" style="margin-bottom: 12px;">Karya Unggulan</div>
+                    <h2 class="section-title">Project Pilihan Saya</h2>
+                    <p class="section-desc">Beberapa contoh proyek web yang telah saya rancang dan bangun dengan standar kode yang rapi.</p>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <article class="project-card">
+                        <div class="project-banner">🌐</div>
+                        <div class="project-body">
+                            <div class="project-tags">
+                                <span class="tag">HTML5</span>
+                                <span class="tag">CSS3</span>
+                                <span class="tag">GitHub Pages</span>
+                            </div>
+                            <h3 class="project-title">Website Portofolio Responsif</h3>
+                            <p class="project-desc">Website profil interaktif dengan sistem multi-halaman dan tema warna espresso-latte yang elegan.</p>
+                            <div class="project-footer">
+                                <span style="font-size: 0.85rem; color: var(--text-muted);">Tugas Portofolio</span>
+                                <a href="project.html" class="project-link">Detail Proyek →</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="project-card">
+                        <div class="project-banner">🛍️</div>
+                        <div class="project-body">
+                            <div class="project-tags">
+                                <span class="tag">Frontend</span>
+                                <span class="tag">UI/UX</span>
+                                <span class="tag">CSS Grid</span>
+                            </div>
+                            <h3 class="project-title">E-Commerce Product Showcase</h3>
+                            <p class="project-desc">Konsep landing page katalog produk modern dengan tata letak grid responsif dan kartu interaktif.</p>
+                            <div class="project-footer">
+                                <span style="font-size: 0.85rem; color: var(--text-muted);">Desain Web</span>
+                                <a href="project.html" class="project-link">Detail Proyek →</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 3 -->
+                    <article class="project-card">
+                        <div class="project-banner">📝</div>
+                        <div class="project-body">
+                            <div class="project-tags">
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">Web App</span>
+                                <span class="tag">DOM</span>
+                            </div>
+                            <h3 class="project-title">Task Management App</h3>
+                            <p class="project-desc">Aplikasi pencatatan tugas harian sederhana dengan navigasi yang cepat dan kemudahan pengelolaan aktivitas.</p>
+                            <div class="project-footer">
+                                <span style="font-size: 0.85rem; color: var(--text-muted);">Web Application</span>
+                                <a href="project.html" class="project-link">Detail Proyek →</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div style="text-align: center; margin-top: 40px;">
+                    <a href="project.html" class="button">Lihat Semua Project</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <div class="badge" style="margin-bottom: 12px;">Kemampuan Teknis</div>
+                    <h2 class="section-title">Keahlian & Teknologi</h2>
+                    <p class="section-desc">Teknologi dan keahlian yang saya gunakan dalam membangun solusi digital.</p>
+                </div>
+
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon">📄</div>
+                        <div class="skill-info">
+                            <h4>HTML5 Semantic</h4>
+                            <p>Struktur kode terstandarisasi, aksesibel, dan SEO-friendly.</p>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">🎨</div>
+                        <div class="skill-info">
+                            <h4>CSS3 & Layouts</h4>
+                            <p>Flexbox, CSS Grid, animasi halus, dan tema modern.</p>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">📱</div>
+                        <div class="skill-info">
+                            <h4>Responsive Design</h4>
+                            <p>Tampilan optimal di perangkat Mobile, Tablet, maupun Desktop.</p>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">🐙</div>
+                        <div class="skill-info">
+                            <h4>Git & GitHub</h4>
+                            <p>Version control, manajemen repositori, dan GitHub Pages.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <p class="footer-text">© 2026 Marshel. Hak Cipta Dilindungi.</p>
+            <ul class="footer-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="project.html">Project</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="https://github.com/Marshel2727" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>
