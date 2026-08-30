@@ -11,12 +11,9 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- Header & Navigasi -->
     <header class="site-header">
         <nav class="navbar container" aria-label="Navigasi utama">
-            <a class="brand" href="index.html">
-                Marshel<span class="brand-dot">.</span>
-            </a>
+            <a class="brand" href="index.html">Marshel<span class="brand-dot">.</span></a>
             <button class="menu-toggle" aria-label="Buka menu navigasi" aria-expanded="false">
                 <span class="hamburger-bar"></span>
                 <span class="hamburger-bar"></span>
@@ -33,104 +30,96 @@
 
     <main>
         <!-- Page Header -->
-        <section class="section section-alt" style="padding-block: 60px 40px;">
-            <div class="container section-header" style="margin-bottom: 0;">
-                <div class="badge" style="margin-bottom: 12px;">Kontak & Diskusi</div>
+        <section class="page-hero section-alt">
+            <div class="container section-header">
+                <div class="badge">Kontak &amp; Diskusi</div>
                 <h1 class="section-title">Hubungi Saya</h1>
                 <p class="section-desc">Punya pertanyaan, ide kolaborasi, atau ingin berdiskusi mengenai web, AI, dan embedded systems? Mari terhubung.</p>
             </div>
         </section>
 
-        <!-- Contact Section -->
+        <!-- Contact Grid -->
         <section class="section">
             <div class="container contact-grid">
-                <!-- Sisi Kiri: Informasi Kontak -->
-                <div>
-                    <div class="contact-card">
-                        <h3 style="font-size: 1.6rem; margin-bottom: 8px; color: var(--espresso);">Informasi Kontak</h3>
-                        <p style="color: var(--text-muted); font-size: 0.95rem;">
-                            Kamu bisa menghubungi saya melalui saluran kontak berikut atau melalui form pesan di samping.
-                        </p>
 
-                        <ul class="contact-info-list">
-                            <li class="contact-info-item">
-                                <div class="contact-info-icon">📍</div>
-                                <div>
-                                    <p class="contact-info-title">Lokasi</p>
-                                    <p class="contact-info-value">Indonesia</p>
-                                </div>
-                            </li>
+                <!-- Left: Contact Info -->
+                <div class="contact-card">
+                    <h3 class="contact-card-title">Informasi Kontak</h3>
+                    <p class="contact-card-subtitle">
+                        Kamu bisa menghubungi saya melalui saluran berikut atau langsung lewat formulir pesan di samping.
+                    </p>
 
-                            <li class="contact-info-item">
-                                <div class="contact-info-icon">📧</div>
-                                <div>
-                                    <p class="contact-info-title">Email</p>
-                                    <p class="contact-info-value">marshel.developer@gmail.com</p>
-                                </div>
-                            </li>
-
-                            <li class="contact-info-item">
-                                <div class="contact-info-icon">🐙</div>
-                                <div>
-                                    <p class="contact-info-title">GitHub Profile</p>
-                                    <p class="contact-info-value">
-                                        <a href="https://github.com/Marshel2727" target="_blank" rel="noopener noreferrer" style="color: var(--latte-dark);">
-                                            github.com/Marshel2727
-                                        </a>
-                                    </p>
-                                </div>
-                            </li>
-
-                            <li class="contact-info-item">
-                                <div class="contact-info-icon">⚡</div>
-                                <div>
-                                    <p class="contact-info-title">Ketersediaan</p>
-                                    <p class="contact-info-value">Terbuka untuk Freelance & Magang</p>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
+                    <ul class="contact-info-list">
+                        <li class="contact-info-item">
+                            <div class="contact-info-icon" aria-hidden="true">📍</div>
+                            <div>
+                                <p class="contact-info-label">Lokasi</p>
+                                <p class="contact-info-value">Indonesia</p>
+                            </div>
+                        </li>
+                        <li class="contact-info-item">
+                            <div class="contact-info-icon" aria-hidden="true">📧</div>
+                            <div>
+                                <p class="contact-info-label">Email</p>
+                                <p class="contact-info-value">
+                                    <a href="mailto:marshel.developer@gmail.com">marshel.developer@gmail.com</a>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="contact-info-item">
+                            <div class="contact-info-icon" aria-hidden="true">🐙</div>
+                            <div>
+                                <p class="contact-info-label">GitHub</p>
+                                <p class="contact-info-value">
+                                    <a href="https://github.com/Marshel2727" target="_blank" rel="noopener noreferrer">github.com/Marshel2727</a>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="contact-info-item">
+                            <div class="contact-info-icon" aria-hidden="true">⚡</div>
+                            <div>
+                                <p class="contact-info-label">Ketersediaan</p>
+                                <p class="contact-info-value">Terbuka untuk Freelance &amp; Magang</p>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
 
-                <!-- Sisi Kanan: Formulir Kirim Pesan -->
-                <div>
-                    <div class="contact-card">
-                        <h3 style="font-size: 1.6rem; margin-bottom: 20px; color: var(--espresso);">Kirimkan Pesan</h3>
-                        <form onsubmit="event.preventDefault(); alert('Terima kasih! Pesan Anda telah diterima.');">
-                            <div class="form-group">
-                                <label class="form-label" for="name">Nama Lengkap</label>
-                                <input class="form-input" type="text" id="name" name="name" placeholder="Masukkan nama Anda..." required>
-                            </div>
+                <!-- Right: Contact Form -->
+                <div class="contact-card">
+                    <h3 class="contact-card-title">Kirimkan Pesan</h3>
+                    <p class="contact-card-subtitle">Isi formulir dan saya akan membalas secepatnya.</p>
 
-                            <div class="form-group">
-                                <label class="form-label" for="email">Alamat Email</label>
-                                <input class="form-input" type="email" id="email" name="email" placeholder="nama@email.com" required>
-                            </div>
-
-                            <div class="form-group">
-                                <label class="form-label" for="subject">Subjek / Topik</label>
-                                <input class="form-input" type="text" id="subject" name="subject" placeholder="Diskusi Proyek / Tanya Portofolio..." required>
-                            </div>
-
-                            <div class="form-group">
-                                <label class="form-label" for="message">Pesan Anda</label>
-                                <textarea class="form-textarea" id="message" name="message" placeholder="Tuliskan pesan atau detail kebutuhan Anda di sini..." required></textarea>
-                            </div>
-
-                            <button type="submit" class="button" style="width: 100%;">
-                                Kirim Pesan ✉️
-                            </button>
-                        </form>
-                    </div>
+                    <form onsubmit="event.preventDefault(); handleFormSubmit(this);">
+                        <div class="form-group">
+                            <label class="form-label" for="name">Nama Lengkap</label>
+                            <input class="form-input" type="text" id="name" name="name" placeholder="Masukkan nama Anda..." required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="email">Alamat Email</label>
+                            <input class="form-input" type="email" id="email" name="email" placeholder="nama@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="subject">Subjek</label>
+                            <input class="form-input" type="text" id="subject" name="subject" placeholder="Diskusi Proyek / Tanya Portofolio..." required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="message">Pesan</label>
+                            <textarea class="form-textarea" id="message" name="message" placeholder="Tuliskan pesan atau detail kebutuhan Anda di sini..." required></textarea>
+                        </div>
+                        <button type="submit" class="button form-submit-btn">
+                            Kirim Pesan ✉️
+                        </button>
+                    </form>
                 </div>
+
             </div>
         </section>
     </main>
 
-    <!-- Footer -->
     <footer class="site-footer">
         <div class="container footer-content">
-            <p class="footer-text">© 2026 Marshel. Hak Cipta Dilindungi.</p>
+            <p class="footer-text">&copy; 2026 Marshel. Built while learning.</p>
             <ul class="footer-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -140,6 +129,15 @@
             </ul>
         </div>
     </footer>
+
     <script src="js/main.js"></script>
+    <script>
+        function handleFormSubmit(form) {
+            const btn = form.querySelector('button[type="submit"]');
+            btn.textContent = '✅ Terkirim!';
+            btn.disabled = true;
+            setTimeout(() => { btn.textContent = 'Kirim Pesan ✉️'; btn.disabled = false; form.reset(); }, 3000);
+        }
+    </script>
 </body>
 </html>

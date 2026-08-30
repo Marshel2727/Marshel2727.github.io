@@ -29,6 +29,7 @@
     </header>
 
     <main>
+        <!-- Page Header -->
         <section class="page-hero section-alt">
             <div class="container section-header">
                 <div class="badge">The Person Behind The Projects</div>
@@ -37,58 +38,110 @@
             </div>
         </section>
 
+        <!-- Main About Content -->
         <section class="section">
-            <div class="container about-hero">
-                <aside>
-                    <div class="profile-card about-profile-card">
-                        <img src="assets/images/profile.png" alt="Foto Marshel" class="profile-img about-profile-img">
+            <div class="container about-layout">
+
+                <!-- Sidebar: Photo + Quick Info -->
+                <aside class="about-sidebar">
+                    <div class="about-profile-wrap">
+                        <img src="assets/images/profile.png" alt="Foto Marshel">
                     </div>
 
-                    <div class="quick-info-card">
+                    <div class="info-card">
                         <p class="eyebrow">Quick Profile</p>
-                        <dl class="quick-info-list">
-                            <div><dt>Nama</dt><dd>Marshel Andhino S. Gorung</dd></div>
-                            <div><dt>Status</dt><dd>Computer Engineering Student</dd></div>
-                            <div><dt>Lokasi</dt><dd>Indonesia</dd></div>
-                            <div><dt>GitHub</dt><dd><a href="https://github.com/Marshel2727" target="_blank" rel="noopener noreferrer">@Marshel2727</a></dd></div>
+                        <dl class="info-rows">
+                            <div class="info-row">
+                                <dt>Nama</dt>
+                                <dd>Marshel Andhino S. Gorung</dd>
+                            </div>
+                            <div class="info-row">
+                                <dt>Status</dt>
+                                <dd>Computer Engineering Student</dd>
+                            </div>
+                            <div class="info-row">
+                                <dt>Lokasi</dt>
+                                <dd>Indonesia</dd>
+                            </div>
+                            <div class="info-row">
+                                <dt>GitHub</dt>
+                                <dd><a href="https://github.com/Marshel2727" target="_blank" rel="noopener noreferrer">@Marshel2727</a></dd>
+                            </div>
+                            <div class="info-row">
+                                <dt>Ketersediaan</dt>
+                                <dd>Terbuka Freelance &amp; Magang</dd>
+                            </div>
                         </dl>
                     </div>
                 </aside>
 
-                <div class="about-story">
-                    <article class="about-bio-card">
+                <!-- Main Content: Bio + Focus + Timeline -->
+                <div class="about-main">
+
+                    <!-- Bio Card -->
+                    <article class="about-card">
                         <p class="eyebrow">My Story</p>
                         <h2>Halo, saya Marshel.</h2>
                         <p>
-                            Saya mahasiswa Teknik Komputer yang tertarik pada software engineering, artificial intelligence, embedded systems, dan robotics. Saya belajar dengan membangun proyek nyata—mulai dari web application dan backend hingga computer vision dan perangkat berbasis ESP32.
+                            Saya mahasiswa Teknik Komputer yang tertarik pada software engineering, artificial intelligence, embedded systems, dan robotics. Saya belajar dengan membangun proyek nyata—mulai dari web application dan backend API, hingga computer vision dan perangkat berbasis ESP32.
                         </p>
                         <p>
-                            Bagi saya, teknologi paling menarik ketika beberapa bidang saling terhubung. Sebuah antarmuka web dapat menjadi pusat monitoring, API menghubungkan data, model AI membantu membaca kondisi, dan mikrokontroler berinteraksi langsung dengan dunia fisik.
+                            Bagi saya, teknologi paling menarik ketika beberapa bidang saling terhubung: antarmuka web jadi pusat monitoring, API menghubungkan data, model AI membaca kondisi, dan mikrokontroler berinteraksi langsung dengan dunia fisik.
                         </p>
                         <p>
-                            Saya belum berhenti pada satu label keahlian. Fokus saya adalah memperkuat fondasi, mendokumentasikan proses, dan terus meningkatkan kualitas setiap sistem yang saya bangun.
+                            Fokus saya adalah memperkuat fondasi, mendokumentasikan proses belajar, dan terus meningkatkan kualitas setiap sistem yang saya bangun.
                         </p>
 
-                        <div class="info-list">
-                            <div><p class="info-item-label">Minat Utama</p><p class="info-item-value">Web · AI · Embedded Systems</p></div>
-                            <div><p class="info-item-label">Cara Belajar</p><p class="info-item-value">Project-based Learning</p></div>
-                            <div><p class="info-item-label">Sedang Didalami</p><p class="info-item-value">YOLO, Backend, ESP32</p></div>
-                            <div><p class="info-item-label">Nilai Kerja</p><p class="info-item-value">Curious · Practical · Iterative</p></div>
-                        </div>
+                        <dl class="bio-quick">
+                            <div class="bio-quick-item">
+                                <dt>Minat Utama</dt>
+                                <dd>Web · AI · Embedded Systems</dd>
+                            </div>
+                            <div class="bio-quick-item">
+                                <dt>Cara Belajar</dt>
+                                <dd>Project-based Learning</dd>
+                            </div>
+                            <div class="bio-quick-item">
+                                <dt>Sedang Didalami</dt>
+                                <dd>YOLO, Backend, ESP32</dd>
+                            </div>
+                            <div class="bio-quick-item">
+                                <dt>Nilai Kerja</dt>
+                                <dd>Curious · Practical · Iterative</dd>
+                            </div>
+                        </dl>
                     </article>
 
-                    <article class="about-bio-card">
+                    <!-- Focus / Direction Card -->
+                    <article class="about-card">
                         <p class="eyebrow">My Direction</p>
                         <h2>Empat Bidang yang Saya Bangun</h2>
                         <div class="focus-grid">
-                            <div><span aria-hidden="true">🌐</span><h3>Web Systems</h3><p>Aplikasi, backend, API, database, dan deployment.</p></div>
-                            <div><span aria-hidden="true">👁️</span><h3>AI &amp; Vision</h3><p>YOLO, OpenCV, model inference, dan local AI.</p></div>
-                            <div><span aria-hidden="true">🤖</span><h3>Embedded</h3><p>ESP32, sensor, servo, dan integrasi perangkat.</p></div>
-                            <div><span aria-hidden="true">🧠</span><h3>Algorithms</h3><p>C++, DSA, problem solving, dan competitive programming.</p></div>
+                            <div class="focus-item">
+                                <span class="focus-emoji" aria-hidden="true">🌐</span>
+                                <h3>Web Systems</h3>
+                                <p>Aplikasi, backend, API, database, dan deployment.</p>
+                            </div>
+                            <div class="focus-item">
+                                <span class="focus-emoji" aria-hidden="true">👁️</span>
+                                <h3>AI &amp; Vision</h3>
+                                <p>YOLO, OpenCV, model inference, dan local AI.</p>
+                            </div>
+                            <div class="focus-item">
+                                <span class="focus-emoji" aria-hidden="true">🤖</span>
+                                <h3>Embedded</h3>
+                                <p>ESP32, sensor, servo, dan integrasi perangkat keras.</p>
+                            </div>
+                            <div class="focus-item">
+                                <span class="focus-emoji" aria-hidden="true">🧠</span>
+                                <h3>Algorithms</h3>
+                                <p>C++, DSA, problem solving, dan competitive programming.</p>
+                            </div>
                         </div>
                     </article>
 
-                    <article class="about-bio-card">
+                    <!-- Timeline Card -->
+                    <article class="about-card">
                         <p class="eyebrow">Learning Timeline</p>
                         <h2>Perjalanan &amp; Pendidikan</h2>
                         <div class="timeline">
@@ -112,23 +165,30 @@
                             </div>
                         </div>
                     </article>
+
                 </div>
             </div>
         </section>
 
-        <section class="section cta-section">
-            <div class="container cta-card">
-                <p class="eyebrow">See The Work</p>
-                <h2>Project adalah cara saya mendokumentasikan perkembangan.</h2>
-                <p>Lihat masalah yang saya coba selesaikan, teknologi yang digunakan, dan proses belajarnya.</p>
-                <a href="project.html" class="button">Explore Projects <span aria-hidden="true">→</span></a>
+        <!-- CTA -->
+        <section class="section section-alt">
+            <div class="container">
+                <div class="cta-card">
+                    <p class="eyebrow">See The Work</p>
+                    <h2>Project adalah cara saya mendokumentasikan perkembangan.</h2>
+                    <p>Lihat masalah yang saya coba selesaikan, teknologi yang digunakan, dan proses belajarnya.</p>
+                    <div class="cta-actions">
+                        <a href="project.html" class="button">Explore Projects →</a>
+                        <a href="contact.html" class="button button-outline">Hubungi Saya</a>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
 
     <footer class="site-footer">
         <div class="container footer-content">
-            <p class="footer-text">© 2026 Marshel. Built while learning.</p>
+            <p class="footer-text">&copy; 2026 Marshel. Built while learning.</p>
             <ul class="footer-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -138,6 +198,7 @@
             </ul>
         </div>
     </footer>
+
     <script src="js/main.js"></script>
 </body>
 </html>

@@ -29,25 +29,27 @@
     </header>
 
     <main>
+        <!-- Page Header -->
         <section class="page-hero section-alt">
             <div class="container section-header">
                 <div class="badge">Selected Work</div>
                 <h1 class="section-title">Projects That Tell My Story</h1>
-                <p class="section-desc">Bukan sekadar daftar teknologi—setiap project mewakili masalah, solusi, dan hal baru yang saya pelajari.</p>
+                <p class="section-desc">Bukan sekadar daftar teknologi—setiap project mewakili masalah nyata, solusi yang saya temukan, dan hal baru yang saya pelajari.</p>
             </div>
         </section>
 
+        <!-- Featured Case Studies -->
         <section class="section" aria-labelledby="case-studies-title">
             <div class="container">
-                <div class="section-heading-row">
-                    <div>
-                        <div class="badge">Featured Case Studies</div>
-                        <h2 class="section-title" id="case-studies-title">Main Projects</h2>
-                    </div>
-                    <p class="section-desc">Tiga proyek utama yang mewakili web system, computer vision, dan local AI.</p>
+                <div class="section-header" style="text-align:left; margin-bottom:32px;">
+                    <div class="badge">Featured Case Studies</div>
+                    <h2 class="section-title" id="case-studies-title">Main Projects</h2>
+                    <p class="section-desc" style="text-align:left;">Tiga proyek utama yang mewakili web system, computer vision, dan local AI.</p>
                 </div>
 
                 <div class="case-study-list">
+
+                    <!-- Case Study 01 -->
                     <article class="case-study" id="entok-monitoring">
                         <div class="case-study-number">01</div>
                         <div class="case-study-main">
@@ -55,11 +57,14 @@
                             <h3>Entok Monitoring System</h3>
                             <p class="case-summary">Aplikasi web untuk membantu monitoring dan pengelolaan data operasional peternakan.</p>
                             <div class="project-tags">
-                                <span class="tag">TypeScript</span><span class="tag">Web API</span><span class="tag">Database</span><span class="tag">Deployment</span>
+                                <span class="tag">TypeScript</span>
+                                <span class="tag">Web API</span>
+                                <span class="tag">Database</span>
+                                <span class="tag">Deployment</span>
                             </div>
                             <div class="project-actions">
-                                <a class="button" href="https://entok-monitoring.vercel.app" target="_blank" rel="noopener noreferrer">Live Demo</a>
-                                <a class="button button-outline" href="https://github.com/Marshel2727/entok-monitoring" target="_blank" rel="noopener noreferrer">GitHub</a>
+                                <a class="button button-sm" href="https://entok-monitoring.vercel.app" target="_blank" rel="noopener noreferrer">Live Demo ↗</a>
+                                <a class="button button-outline button-sm" href="https://github.com/Marshel2727/entok-monitoring" target="_blank" rel="noopener noreferrer">GitHub</a>
                             </div>
                         </div>
                         <dl class="case-study-details">
@@ -70,6 +75,7 @@
                         </dl>
                     </article>
 
+                    <!-- Case Study 02 -->
                     <article class="case-study" id="vision-entok">
                         <div class="case-study-number">02</div>
                         <div class="case-study-main">
@@ -77,10 +83,13 @@
                             <h3>Vision Entok</h3>
                             <p class="case-summary">Eksperimen computer vision untuk mendeteksi objek pada sistem peternakan menggunakan model YOLO.</p>
                             <div class="project-tags">
-                                <span class="tag">Python</span><span class="tag">YOLO</span><span class="tag">OpenCV</span><span class="tag">Model Inference</span>
+                                <span class="tag">Python</span>
+                                <span class="tag">YOLO</span>
+                                <span class="tag">OpenCV</span>
+                                <span class="tag">Model Inference</span>
                             </div>
                             <div class="project-actions">
-                                <a class="button button-outline" href="https://github.com/Marshel2727/vision-entok" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+                                <a class="button button-outline button-sm" href="https://github.com/Marshel2727/vision-entok" target="_blank" rel="noopener noreferrer">GitHub Repository ↗</a>
                             </div>
                         </div>
                         <dl class="case-study-details">
@@ -91,6 +100,7 @@
                         </dl>
                     </article>
 
+                    <!-- Case Study 03 -->
                     <article class="case-study" id="translator-ai">
                         <div class="case-study-number">03</div>
                         <div class="case-study-main">
@@ -98,10 +108,13 @@
                             <h3>Mars Web Translator AI</h3>
                             <p class="case-summary">Eksperimen penerjemahan berbasis model AI lokal yang menghubungkan antarmuka web, API, dan inference.</p>
                             <div class="project-tags">
-                                <span class="tag">JavaScript</span><span class="tag">FastAPI</span><span class="tag">REST API</span><span class="tag">Local AI</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">FastAPI</span>
+                                <span class="tag">REST API</span>
+                                <span class="tag">Local AI</span>
                             </div>
                             <div class="project-actions">
-                                <a class="button button-outline" href="https://github.com/Marshel2727/mars-web-translator-ai" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+                                <a class="button button-outline button-sm" href="https://github.com/Marshel2727/mars-web-translator-ai" target="_blank" rel="noopener noreferrer">GitHub Repository ↗</a>
                             </div>
                         </div>
                         <dl class="case-study-details">
@@ -111,10 +124,12 @@
                             <div><dt>Learning</dt><dd>Kontrak API, autentikasi lokal, error handling, dan inference workflow.</dd></div>
                         </dl>
                     </article>
+
                 </div>
             </div>
         </section>
 
+        <!-- Explorations / Learning in Public -->
         <section class="section section-alt" aria-labelledby="explorations-title">
             <div class="container">
                 <div class="section-header">
@@ -123,58 +138,65 @@
                     <p class="section-desc">Eksperimen dan karya akademik yang menunjukkan arah belajar saya di luar tiga project utama.</p>
                 </div>
 
-                <div class="projects-grid exploration-grid">
+                <div class="projects-grid">
                     <article class="project-card">
-                        <div class="project-banner">🧠</div>
-                        <div class="project-body">
-                            <p class="eyebrow">AI Experiments</p>
-                            <h3 class="project-title">Mars Web AI Local</h3>
-                            <p class="project-desc">Eksperimen menghubungkan aplikasi web dengan kemampuan AI yang berjalan secara lokal.</p>
-                            <div class="project-footer"><span class="status-pill">Exploring</span><a class="project-link" href="https://github.com/Marshel2727/mars-web-ai-local" target="_blank" rel="noopener noreferrer">GitHub →</a></div>
+                        <div class="project-banner" aria-hidden="true">🧠</div>
+                        <p class="eyebrow">AI Experiments</p>
+                        <h3 class="project-title">Mars Web AI Local</h3>
+                        <p class="project-desc">Eksperimen menghubungkan aplikasi web dengan kemampuan AI yang berjalan secara lokal.</p>
+                        <div class="project-footer">
+                            <span class="status-pill">Exploring</span>
+                            <a class="project-link" href="https://github.com/Marshel2727/mars-web-ai-local" target="_blank" rel="noopener noreferrer">GitHub →</a>
                         </div>
                     </article>
 
                     <article class="project-card">
-                        <div class="project-banner">🤖</div>
-                        <div class="project-body">
-                            <p class="eyebrow">Hardware &amp; Robotics</p>
-                            <h3 class="project-title">ESP32 Robot Experiments</h3>
-                            <p class="project-desc">Eksplorasi mikrokontroler, sensor ultrasonik, servo, dan kontrol robot sebagai proses belajar embedded systems.</p>
-                            <div class="project-footer"><span class="status-pill">Learning</span><span class="project-note">Hardware Experiment</span></div>
+                        <div class="project-banner" aria-hidden="true">🤖</div>
+                        <p class="eyebrow">Hardware &amp; Robotics</p>
+                        <h3 class="project-title">ESP32 Robot Experiments</h3>
+                        <p class="project-desc">Eksplorasi mikrokontroler, sensor ultrasonik, servo, dan kontrol robot sebagai proses belajar embedded systems.</p>
+                        <div class="project-footer">
+                            <span class="status-pill">Learning</span>
+                            <span class="project-note">Hardware Experiment</span>
                         </div>
                     </article>
 
                     <article class="project-card">
-                        <div class="project-banner">⌨️</div>
-                        <div class="project-body">
-                            <p class="eyebrow">Algorithms</p>
-                            <h3 class="project-title">Competitive Programming</h3>
-                            <p class="project-desc">Latihan C++, struktur data, algoritma, dan problem solving untuk memperkuat fondasi berpikir komputasional.</p>
-                            <div class="project-footer"><span class="status-pill">Ongoing</span><span class="project-note">Learning Track</span></div>
+                        <div class="project-banner" aria-hidden="true">⌨️</div>
+                        <p class="eyebrow">Algorithms</p>
+                        <h3 class="project-title">Competitive Programming</h3>
+                        <p class="project-desc">Latihan C++, struktur data, algoritma, dan problem solving untuk memperkuat fondasi berpikir komputasional.</p>
+                        <div class="project-footer">
+                            <span class="status-pill">Ongoing</span>
+                            <span class="project-note">Learning Track</span>
                         </div>
                     </article>
 
                     <article class="project-card">
-                        <div class="project-banner">🎓</div>
-                        <div class="project-body">
-                            <p class="eyebrow">Academic Work</p>
-                            <h3 class="project-title">Semester 3 Repository</h3>
-                            <p class="project-desc">Dokumentasi tugas dan latihan perkuliahan sebagai jejak perkembangan akademik dan praktik pemrograman.</p>
-                            <div class="project-footer"><span class="status-pill">Academic</span><a class="project-link" href="https://github.com/Marshel2727/Semester3Marshel" target="_blank" rel="noopener noreferrer">GitHub →</a></div>
+                        <div class="project-banner" aria-hidden="true">🎓</div>
+                        <p class="eyebrow">Academic Work</p>
+                        <h3 class="project-title">Semester 3 Repository</h3>
+                        <p class="project-desc">Dokumentasi tugas dan latihan perkuliahan sebagai jejak perkembangan akademik dan praktik pemrograman.</p>
+                        <div class="project-footer">
+                            <span class="status-pill">Academic</span>
+                            <a class="project-link" href="https://github.com/Marshel2727/Semester3Marshel" target="_blank" rel="noopener noreferrer">GitHub →</a>
                         </div>
                     </article>
                 </div>
             </div>
         </section>
 
-        <section class="section cta-section">
-            <div class="container cta-card">
-                <p class="eyebrow">More on GitHub</p>
-                <h2>Project saya terus berkembang.</h2>
-                <p>Lihat repository lain, riwayat commit, dan eksperimen terbaru langsung di GitHub.</p>
-                <div class="hero-actions">
-                    <a href="https://github.com/Marshel2727?tab=repositories" class="button" target="_blank" rel="noopener noreferrer">View All Repositories</a>
-                    <a href="contact.html" class="button button-outline">Start a Conversation</a>
+        <!-- CTA -->
+        <section class="section">
+            <div class="container">
+                <div class="cta-card">
+                    <p class="eyebrow">More on GitHub</p>
+                    <h2>Project saya terus berkembang.</h2>
+                    <p>Lihat repository lain, riwayat commit, dan eksperimen terbaru langsung di GitHub.</p>
+                    <div class="cta-actions">
+                        <a href="https://github.com/Marshel2727?tab=repositories" class="button" target="_blank" rel="noopener noreferrer">View All Repositories</a>
+                        <a href="contact.html" class="button button-outline">Start a Conversation</a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -182,7 +204,7 @@
 
     <footer class="site-footer">
         <div class="container footer-content">
-            <p class="footer-text">© 2026 Marshel. Built while learning.</p>
+            <p class="footer-text">&copy; 2026 Marshel. Built while learning.</p>
             <ul class="footer-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -192,6 +214,7 @@
             </ul>
         </div>
     </footer>
+
     <script src="js/main.js"></script>
 </body>
 </html>
