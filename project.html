@@ -1,146 +1,198 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project | Marshel Web Developer</title>
+    <meta name="description" content="Project Marshel di bidang web, AI, computer vision, local AI, embedded systems, dan pemrograman.">
+    <title>Projects | Marshel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- Header & Navigasi -->
     <header class="site-header">
         <nav class="navbar container" aria-label="Navigasi utama">
-            <a class="brand" href="index.html">
-                Marshel<span class="brand-dot">.</span>
-            </a>
+            <a class="brand" href="index.html">Marshel<span class="brand-dot">.</span></a>
+            <button class="menu-toggle" aria-label="Buka menu navigasi" aria-expanded="false">
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+            </button>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a class="active" href="project.html" aria-current="page">Project</a></li>
+                <li><a class="active" href="project.html" aria-current="page">Projects</a></li>
+                <li><a href="index.html#journey">Journey</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <!-- Page Header -->
-        <section class="section section-alt" style="padding-block: 60px 40px;">
-            <div class="container section-header" style="margin-bottom: 0;">
-                <div class="badge" style="margin-bottom: 12px;">Portofolio Karya</div>
-                <h1 class="section-title">Kumpulan Project</h1>
-                <p class="section-desc">Eksplorasi berbagai proyek website dan implementasi kode yang telah saya kembangkan.</p>
+        <section class="page-hero section-alt">
+            <div class="container section-header">
+                <div class="badge">Selected Work</div>
+                <h1 class="section-title">Projects That Tell My Story</h1>
+                <p class="section-desc">Bukan sekadar daftar teknologi—setiap project mewakili masalah, solusi, dan hal baru yang saya pelajari.</p>
             </div>
         </section>
 
-        <!-- Projects Grid Section -->
-        <section class="section">
+        <section class="section" aria-labelledby="case-studies-title">
             <div class="container">
-                <div class="projects-grid">
-                    <!-- Project 1 -->
-                    <article class="project-card">
-                        <div class="project-banner">🌐</div>
-                        <div class="project-body">
+                <div class="section-heading-row">
+                    <div>
+                        <div class="badge">Featured Case Studies</div>
+                        <h2 class="section-title" id="case-studies-title">Main Projects</h2>
+                    </div>
+                    <p class="section-desc">Tiga proyek utama yang mewakili web system, computer vision, dan local AI.</p>
+                </div>
+
+                <div class="case-study-list">
+                    <article class="case-study" id="entok-monitoring">
+                        <div class="case-study-number">01</div>
+                        <div class="case-study-main">
+                            <p class="eyebrow">Web System · Active Development</p>
+                            <h3>Entok Monitoring System</h3>
+                            <p class="case-summary">Aplikasi web untuk membantu monitoring dan pengelolaan data operasional peternakan.</p>
                             <div class="project-tags">
-                                <span class="tag">HTML5</span>
-                                <span class="tag">CSS3</span>
-                                <span class="tag">GitHub Pages</span>
+                                <span class="tag">TypeScript</span><span class="tag">Web API</span><span class="tag">Database</span><span class="tag">Deployment</span>
                             </div>
-                            <h3 class="project-title">Website Portofolio Pribadi</h3>
-                            <p class="project-desc">
-                                Website profil interaktif multi-halaman dengan desain modern berbasis tema warm latte & espresso. Sepenuhnya responsif di semua perangkat dan di-hosting langsung di GitHub Pages.
-                            </p>
-                            <div class="project-footer">
-                                <span class="badge" style="font-size: 0.75rem;">Status: Live</span>
-                                <a href="index.html" class="project-link">Lihat Halaman →</a>
+                            <div class="project-actions">
+                                <a class="button" href="https://entok-monitoring.vercel.app" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                                <a class="button button-outline" href="https://github.com/Marshel2727/entok-monitoring" target="_blank" rel="noopener noreferrer">GitHub</a>
                             </div>
+                        </div>
+                        <dl class="case-study-details">
+                            <div><dt>Problem</dt><dd>Informasi peternakan perlu dicatat dan dipantau secara lebih terstruktur.</dd></div>
+                            <div><dt>Solution</dt><dd>Membangun sistem web yang menyatukan proses monitoring dan manajemen data.</dd></div>
+                            <div><dt>My Role</dt><dd>Web development, system integration, dan deployment.</dd></div>
+                            <div><dt>Learning</dt><dd>Menghubungkan frontend, API, database, dan kebutuhan operasional nyata.</dd></div>
+                        </dl>
+                    </article>
+
+                    <article class="case-study" id="vision-entok">
+                        <div class="case-study-number">02</div>
+                        <div class="case-study-main">
+                            <p class="eyebrow">AI &amp; Computer Vision</p>
+                            <h3>Vision Entok</h3>
+                            <p class="case-summary">Eksperimen computer vision untuk mendeteksi objek pada sistem peternakan menggunakan model YOLO.</p>
+                            <div class="project-tags">
+                                <span class="tag">Python</span><span class="tag">YOLO</span><span class="tag">OpenCV</span><span class="tag">Model Inference</span>
+                            </div>
+                            <div class="project-actions">
+                                <a class="button button-outline" href="https://github.com/Marshel2727/vision-entok" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+                            </div>
+                        </div>
+                        <dl class="case-study-details">
+                            <div><dt>Problem</dt><dd>Monitoring visual manual sulit dilakukan secara konsisten dalam aliran video.</dd></div>
+                            <div><dt>Solution</dt><dd>Mengeksplorasi deteksi objek berbasis YOLO melalui aplikasi lokal dan sumber video kamera.</dd></div>
+                            <div><dt>My Role</dt><dd>Eksperimen model, integrasi inference, dan pengembangan antarmuka.</dd></div>
+                            <div><dt>Learning</dt><dd>Dataset, model deployment, pemrosesan frame, dan batas performa perangkat.</dd></div>
+                        </dl>
+                    </article>
+
+                    <article class="case-study" id="translator-ai">
+                        <div class="case-study-number">03</div>
+                        <div class="case-study-main">
+                            <p class="eyebrow">Local AI · Translation</p>
+                            <h3>Mars Web Translator AI</h3>
+                            <p class="case-summary">Eksperimen penerjemahan berbasis model AI lokal yang menghubungkan antarmuka web, API, dan inference.</p>
+                            <div class="project-tags">
+                                <span class="tag">JavaScript</span><span class="tag">FastAPI</span><span class="tag">REST API</span><span class="tag">Local AI</span>
+                            </div>
+                            <div class="project-actions">
+                                <a class="button button-outline" href="https://github.com/Marshel2727/mars-web-translator-ai" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+                            </div>
+                        </div>
+                        <dl class="case-study-details">
+                            <div><dt>Problem</dt><dd>Eksperimen penerjemahan membutuhkan alur yang menghubungkan halaman web dengan model lokal.</dd></div>
+                            <div><dt>Solution</dt><dd>Membangun integrasi frontend dan layanan API untuk memproses terjemahan melalui AI lokal.</dd></div>
+                            <div><dt>My Role</dt><dd>Frontend integration, API workflow, dan pengujian model lokal.</dd></div>
+                            <div><dt>Learning</dt><dd>Kontrak API, autentikasi lokal, error handling, dan inference workflow.</dd></div>
+                        </dl>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-alt" aria-labelledby="explorations-title">
+            <div class="container">
+                <div class="section-header">
+                    <div class="badge">More Explorations</div>
+                    <h2 class="section-title" id="explorations-title">Learning in Public</h2>
+                    <p class="section-desc">Eksperimen dan karya akademik yang menunjukkan arah belajar saya di luar tiga project utama.</p>
+                </div>
+
+                <div class="projects-grid exploration-grid">
+                    <article class="project-card">
+                        <div class="project-banner">🧠</div>
+                        <div class="project-body">
+                            <p class="eyebrow">AI Experiments</p>
+                            <h3 class="project-title">Mars Web AI Local</h3>
+                            <p class="project-desc">Eksperimen menghubungkan aplikasi web dengan kemampuan AI yang berjalan secara lokal.</p>
+                            <div class="project-footer"><span class="status-pill">Exploring</span><a class="project-link" href="https://github.com/Marshel2727/mars-web-ai-local" target="_blank" rel="noopener noreferrer">GitHub →</a></div>
                         </div>
                     </article>
 
-                    <!-- Project 2 -->
                     <article class="project-card">
-                        <div class="project-banner">🛍️</div>
+                        <div class="project-banner">🤖</div>
                         <div class="project-body">
-                            <div class="project-tags">
-                                <span class="tag">Web Design</span>
-                                <span class="tag">CSS Grid</span>
-                                <span class="tag">UI/UX</span>
-                            </div>
-                            <h3 class="project-title">E-Commerce Product Showcase</h3>
-                            <p class="project-desc">
-                                Konsep katalog produk toko online modern dengan tata letak grid yang rapi, tombol call-to-action yang jelas, dan efek hover interaktif untuk meningkatkan pengalaman belanja pengguna.
-                            </p>
-                            <div class="project-footer">
-                                <span class="badge" style="font-size: 0.75rem;">Desain Web</span>
-                                <span class="project-link" style="color: var(--text-muted);">Proyek Konsep</span>
-                            </div>
+                            <p class="eyebrow">Hardware &amp; Robotics</p>
+                            <h3 class="project-title">ESP32 Robot Experiments</h3>
+                            <p class="project-desc">Eksplorasi mikrokontroler, sensor ultrasonik, servo, dan kontrol robot sebagai proses belajar embedded systems.</p>
+                            <div class="project-footer"><span class="status-pill">Learning</span><span class="project-note">Hardware Experiment</span></div>
                         </div>
                     </article>
 
-                    <!-- Project 3 -->
                     <article class="project-card">
-                        <div class="project-banner">📝</div>
+                        <div class="project-banner">⌨️</div>
                         <div class="project-body">
-                            <div class="project-tags">
-                                <span class="tag">JavaScript</span>
-                                <span class="tag">DOM</span>
-                                <span class="tag">Interactive</span>
-                            </div>
-                            <h3 class="project-title">Aplikasi Task Management</h3>
-                            <p class="project-desc">
-                                Aplikasi web pencatatan tugas harian sederhana dengan fitur penambahan kegiatan, status selesai (checklist), dan antarmuka yang bersih untuk produktivitas kerja harian.
-                            </p>
-                            <div class="project-footer">
-                                <span class="badge" style="font-size: 0.75rem;">Aplikasi Web</span>
-                                <span class="project-link" style="color: var(--text-muted);">Latihan Frontend</span>
-                            </div>
+                            <p class="eyebrow">Algorithms</p>
+                            <h3 class="project-title">Competitive Programming</h3>
+                            <p class="project-desc">Latihan C++, struktur data, algoritma, dan problem solving untuk memperkuat fondasi berpikir komputasional.</p>
+                            <div class="project-footer"><span class="status-pill">Ongoing</span><span class="project-note">Learning Track</span></div>
                         </div>
                     </article>
 
-                    <!-- Project 4 -->
                     <article class="project-card">
-                        <div class="project-banner">🚀</div>
+                        <div class="project-banner">🎓</div>
                         <div class="project-body">
-                            <div class="project-tags">
-                                <span class="tag">Landing Page</span>
-                                <span class="tag">Responsive</span>
-                                <span class="tag">Flexbox</span>
-                            </div>
-                            <h3 class="project-title">Digital Product Landing Page</h3>
-                            <p class="project-desc">
-                                Landing page promosi produk digital dengan penekanan pada copywriting yang menarik, tipografi elegan, dan tata letak berorientasi konversi yang cepat diakses.
-                            </p>
-                            <div class="project-footer">
-                                <span class="badge" style="font-size: 0.75rem;">Landing Page</span>
-                                <span class="project-link" style="color: var(--text-muted);">Desain Responsif</span>
-                            </div>
+                            <p class="eyebrow">Academic Work</p>
+                            <h3 class="project-title">Semester 3 Repository</h3>
+                            <p class="project-desc">Dokumentasi tugas dan latihan perkuliahan sebagai jejak perkembangan akademik dan praktik pemrograman.</p>
+                            <div class="project-footer"><span class="status-pill">Academic</span><a class="project-link" href="https://github.com/Marshel2727/Semester3Marshel" target="_blank" rel="noopener noreferrer">GitHub →</a></div>
                         </div>
                     </article>
                 </div>
+            </div>
+        </section>
 
-                <!-- Call to Action Banner -->
-                <div style="margin-top: 60px; background: var(--surface-alt); padding: 48px; border-radius: var(--radius); border: 1px solid var(--border); text-align: center;">
-                    <h3 style="font-family: Georgia, serif; font-size: 1.8rem; margin-bottom: 12px; color: var(--espresso);">Punya Ide Proyek Menarik?</h3>
-                    <p style="color: var(--text-muted); max-width: 540px; margin-inline: auto; margin-bottom: 24px;">
-                        Saya selalu terbuka untuk berdiskusi, belajar hal baru, dan berkolaborasi dalam proyek pemrograman web.
-                    </p>
-                    <a href="contact.html" class="button">Hubungi Saya Sekarang</a>
+        <section class="section cta-section">
+            <div class="container cta-card">
+                <p class="eyebrow">More on GitHub</p>
+                <h2>Project saya terus berkembang.</h2>
+                <p>Lihat repository lain, riwayat commit, dan eksperimen terbaru langsung di GitHub.</p>
+                <div class="hero-actions">
+                    <a href="https://github.com/Marshel2727?tab=repositories" class="button" target="_blank" rel="noopener noreferrer">View All Repositories</a>
+                    <a href="contact.html" class="button button-outline">Start a Conversation</a>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- Footer -->
     <footer class="site-footer">
         <div class="container footer-content">
-            <p class="footer-text">© 2026 Marshel. Hak Cipta Dilindungi.</p>
+            <p class="footer-text">© 2026 Marshel. Built while learning.</p>
             <ul class="footer-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="project.html">Project</a></li>
+                <li><a href="index.html#journey">Journey</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="https://github.com/Marshel2727" target="_blank" rel="noopener noreferrer">GitHub</a></li>
             </ul>
         </div>
     </footer>
+    <script src="js/main.js"></script>
 </body>
 </html>

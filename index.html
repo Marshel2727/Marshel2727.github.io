@@ -1,59 +1,63 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marshel | Portofolio Web Developer</title>
+    <meta name="description" content="Portofolio Marshel, mahasiswa Teknik Komputer yang membangun proyek web, AI, computer vision, IoT, dan embedded systems.">
+    <title>Marshel | Computer Engineering Student</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- Header & Navigasi -->
     <header class="site-header">
         <nav class="navbar container" aria-label="Navigasi utama">
-            <a class="brand" href="index.html">
-                Marshel<span class="brand-dot">.</span>
-            </a>
+            <a class="brand" href="index.html">Marshel<span class="brand-dot">.</span></a>
+            <button class="menu-toggle" aria-label="Buka menu navigasi" aria-expanded="false">
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+            </button>
             <ul class="nav-links">
                 <li><a class="active" href="index.html" aria-current="page">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="project.html">Project</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="#journey">Journey</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <!-- Hero Section -->
         <section class="hero">
             <div class="container hero-grid">
                 <div class="hero-content">
-                    <div class="badge">
-                        <span class="badge-dot"></span>
-                        Terbuka untuk Kolaborasi & Proyek Baru
-                    </div>
-                    <h1 class="hero-title">Halo, Saya <span>Marshel</span> 👋</h1>
-                    <p class="hero-subtitle">Web Developer & Tech Enthusiast</p>
+                    <div class="badge"><span class="badge-dot"></span>Computer Engineering Student</div>
+                    <p class="hero-kicker">Hi, I'm Marshel 👋</p>
+                    <h1 class="hero-title">Building <span>Web, AI</span> &amp; Embedded Systems.</h1>
                     <p class="hero-description">
-                        Selamat datang di website portofolio pribadi saya! Saya berfokus pada pembuatan antarmuka web yang modern, interaktif, responsif, dan mudah digunakan.
+                        Saya senang mengubah ide menjadi sistem nyata—mulai dari aplikasi web dan backend, model computer vision, hingga perangkat berbasis ESP32.
                     </p>
                     <div class="hero-actions">
-                        <a href="project.html" class="button">
-                            Lihat Project Saya <span>→</span>
-                        </a>
-                        <a href="contact.html" class="button button-outline">
-                            Hubungi Saya
-                        </a>
+                        <a href="project.html" class="button">Explore My Work <span aria-hidden="true">→</span></a>
+                        <a href="https://github.com/Marshel2727" class="button button-outline" target="_blank" rel="noopener noreferrer">GitHub</a>
                     </div>
+                    <ul class="hero-fields" aria-label="Bidang utama">
+                        <li>Web &amp; Backend</li>
+                        <li>AI &amp; Vision</li>
+                        <li>IoT &amp; Robotics</li>
+                    </ul>
                 </div>
 
                 <div class="hero-image-wrapper">
                     <div class="profile-card">
-                        <img src="assets/images/profile.png" alt="Foto Profil Marshel" class="profile-img">
+                        <img src="assets/images/profile.png" alt="Foto Marshel" class="profile-img">
                         <div class="profile-floating-badge">
-                            <span class="floating-icon">💻</span>
+                            <span class="floating-icon" aria-hidden="true">⚙️</span>
                             <div>
-                                <p class="floating-text-title">Fokus Keahlian</p>
-                                <p class="floating-text-desc">Frontend Web Dev</p>
+                                <p class="floating-text-title">Currently Exploring</p>
+                                <p class="floating-text-desc">Web · AI · IoT</p>
                             </div>
                         </div>
                     </div>
@@ -61,152 +65,185 @@
             </div>
         </section>
 
-        <!-- Stats Section -->
-        <section class="section" style="padding-top: 0;">
+        <section class="section" aria-labelledby="building-title">
             <div class="container">
-                <div class="stats-grid">
-                    <div class="stat-card">
-                        <div class="stat-number">4+</div>
-                        <div class="stat-label">Halaman Web Terstruktur</div>
+                <div class="section-heading-row">
+                    <div>
+                        <div class="badge">In Progress</div>
+                        <h2 class="section-title" id="building-title">What I'm Building Now</h2>
                     </div>
-                    <div class="stat-card">
-                        <div class="stat-number">100%</div>
-                        <div class="stat-label">Desain Responsif & Modern</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-number">Git</div>
-                        <div class="stat-label">Version Control & GitHub Live</div>
-                    </div>
+                    <p class="section-desc">Empat jalur belajar yang sedang saya kembangkan melalui proyek nyata.</p>
+                </div>
+
+                <div class="building-grid">
+                    <article class="building-card">
+                        <span class="card-icon" aria-hidden="true">🦆</span>
+                        <p class="eyebrow">Web System</p>
+                        <h3>Entok Monitoring</h3>
+                        <p>Monitoring dan pengelolaan data peternakan berbasis web.</p>
+                    </article>
+                    <article class="building-card">
+                        <span class="card-icon" aria-hidden="true">👁️</span>
+                        <p class="eyebrow">Computer Vision</p>
+                        <h3>Vision Entok</h3>
+                        <p>Eksperimen deteksi objek dengan YOLO dan OpenCV.</p>
+                    </article>
+                    <article class="building-card">
+                        <span class="card-icon" aria-hidden="true">🤖</span>
+                        <p class="eyebrow">Embedded Systems</p>
+                        <h3>ESP32 Robotics</h3>
+                        <p>Eksperimen sensor, servo, kontrol motor, dan mikrokontroler.</p>
+                    </article>
+                    <article class="building-card">
+                        <span class="card-icon" aria-hidden="true">🧠</span>
+                        <p class="eyebrow">Algorithms</p>
+                        <h3>DSA Practice</h3>
+                        <p>Mendalami struktur data, algoritma, dan competitive programming.</p>
+                    </article>
                 </div>
             </div>
         </section>
 
-        <!-- Featured Projects Section -->
-        <section class="section section-alt">
-            <div class="container">
-                <div class="section-header">
-                    <div class="badge" style="margin-bottom: 12px;">Karya Unggulan</div>
-                    <h2 class="section-title">Project Pilihan Saya</h2>
-                    <p class="section-desc">Beberapa contoh proyek web yang telah saya rancang dan bangun dengan standar kode yang rapi.</p>
-                </div>
-
-                <div class="projects-grid">
-                    <!-- Project 1 -->
-                    <article class="project-card">
-                        <div class="project-banner">🌐</div>
-                        <div class="project-body">
-                            <div class="project-tags">
-                                <span class="tag">HTML5</span>
-                                <span class="tag">CSS3</span>
-                                <span class="tag">GitHub Pages</span>
-                            </div>
-                            <h3 class="project-title">Website Portofolio Responsif</h3>
-                            <p class="project-desc">Website profil interaktif dengan sistem multi-halaman dan tema warna espresso-latte yang elegan.</p>
-                            <div class="project-footer">
-                                <span style="font-size: 0.85rem; color: var(--text-muted);">Tugas Portofolio</span>
-                                <a href="project.html" class="project-link">Detail Proyek →</a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Project 2 -->
-                    <article class="project-card">
-                        <div class="project-banner">🛍️</div>
-                        <div class="project-body">
-                            <div class="project-tags">
-                                <span class="tag">Frontend</span>
-                                <span class="tag">UI/UX</span>
-                                <span class="tag">CSS Grid</span>
-                            </div>
-                            <h3 class="project-title">E-Commerce Product Showcase</h3>
-                            <p class="project-desc">Konsep landing page katalog produk modern dengan tata letak grid responsif dan kartu interaktif.</p>
-                            <div class="project-footer">
-                                <span style="font-size: 0.85rem; color: var(--text-muted);">Desain Web</span>
-                                <a href="project.html" class="project-link">Detail Proyek →</a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Project 3 -->
-                    <article class="project-card">
-                        <div class="project-banner">📝</div>
-                        <div class="project-body">
-                            <div class="project-tags">
-                                <span class="tag">JavaScript</span>
-                                <span class="tag">Web App</span>
-                                <span class="tag">DOM</span>
-                            </div>
-                            <h3 class="project-title">Task Management App</h3>
-                            <p class="project-desc">Aplikasi pencatatan tugas harian sederhana dengan navigasi yang cepat dan kemudahan pengelolaan aktivitas.</p>
-                            <div class="project-footer">
-                                <span style="font-size: 0.85rem; color: var(--text-muted);">Web Application</span>
-                                <a href="project.html" class="project-link">Detail Proyek →</a>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-
-                <div style="text-align: center; margin-top: 40px;">
-                    <a href="project.html" class="button">Lihat Semua Project</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Skills Section -->
-        <section class="section">
+        <section class="section section-alt" aria-labelledby="featured-title">
             <div class="container">
                 <div class="section-header">
-                    <div class="badge" style="margin-bottom: 12px;">Kemampuan Teknis</div>
-                    <h2 class="section-title">Keahlian & Teknologi</h2>
-                    <p class="section-desc">Teknologi dan keahlian yang saya gunakan dalam membangun solusi digital.</p>
+                    <div class="badge">Featured Project</div>
+                    <h2 class="section-title" id="featured-title">Entok Monitoring System</h2>
+                    <p class="section-desc">Sistem web yang membawa pengelolaan peternakan ke alur kerja digital yang lebih terstruktur.</p>
                 </div>
 
-                <div class="skills-grid">
-                    <div class="skill-card">
-                        <div class="skill-icon">📄</div>
-                        <div class="skill-info">
-                            <h4>HTML5 Semantic</h4>
-                            <p>Struktur kode terstandarisasi, aksesibel, dan SEO-friendly.</p>
+                <article class="featured-project">
+                    <div class="featured-visual" aria-hidden="true">
+                        <span class="visual-orbit orbit-one"></span>
+                        <span class="visual-orbit orbit-two"></span>
+                        <span class="featured-icon">🦆</span>
+                        <span class="visual-label">Monitoring · Management · Web</span>
+                    </div>
+                    <div class="featured-content">
+                        <div class="project-tags">
+                            <span class="tag">TypeScript</span>
+                            <span class="tag">Web API</span>
+                            <span class="tag">Database</span>
+                        </div>
+                        <div class="case-list">
+                            <div><p class="case-label">Problem</p><p>Data operasional peternakan perlu dicatat dan dipantau dalam satu sistem.</p></div>
+                            <div><p class="case-label">Solution</p><p>Membangun aplikasi web untuk membantu pengelolaan dan monitoring data peternakan.</p></div>
+                            <div><p class="case-label">My Role</p><p>Web development, system integration, dan deployment.</p></div>
+                        </div>
+                        <div class="project-actions">
+                            <a class="button" href="https://entok-monitoring.vercel.app" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                            <a class="button button-outline" href="https://github.com/Marshel2727/entok-monitoring" target="_blank" rel="noopener noreferrer">GitHub</a>
+                            <a class="text-link" href="project.html#entok-monitoring">Case Study <span aria-hidden="true">→</span></a>
                         </div>
                     </div>
-                    <div class="skill-card">
-                        <div class="skill-icon">🎨</div>
-                        <div class="skill-info">
-                            <h4>CSS3 & Layouts</h4>
-                            <p>Flexbox, CSS Grid, animasi halus, dan tema modern.</p>
-                        </div>
-                    </div>
-                    <div class="skill-card">
-                        <div class="skill-icon">📱</div>
-                        <div class="skill-info">
-                            <h4>Responsive Design</h4>
-                            <p>Tampilan optimal di perangkat Mobile, Tablet, maupun Desktop.</p>
-                        </div>
-                    </div>
-                    <div class="skill-card">
-                        <div class="skill-icon">🐙</div>
-                        <div class="skill-info">
-                            <h4>Git & GitHub</h4>
-                            <p>Version control, manajemen repositori, dan GitHub Pages.</p>
-                        </div>
-                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="section" aria-labelledby="stack-title">
+            <div class="container">
+                <div class="section-header">
+                    <div class="badge">Tech Stack</div>
+                    <h2 class="section-title" id="stack-title">Tools I Build With</h2>
+                    <p class="section-desc">Bukan skor kemampuan, tetapi teknologi yang sedang dipelajari dan sudah digunakan dalam proyek.</p>
+                </div>
+
+                <div class="stack-grid">
+                    <article class="stack-card">
+                        <div class="stack-card-header"><span aria-hidden="true">⌨️</span><h3>Languages</h3></div>
+                        <ul class="stack-list">
+                            <li><span>C++ · Python</span><small>Project Experience</small></li>
+                            <li><span>JavaScript · TypeScript</span><small>Project Experience</small></li>
+                            <li><span>Java</span><small>Learning</small></li>
+                        </ul>
+                    </article>
+                    <article class="stack-card">
+                        <div class="stack-card-header"><span aria-hidden="true">🌐</span><h3>Web &amp; Backend</h3></div>
+                        <ul class="stack-list">
+                            <li><span>HTML · CSS · JavaScript</span><small>Comfortable</small></li>
+                            <li><span>FastAPI · REST API</span><small>Project Experience</small></li>
+                            <li><span>Database Integration</span><small>Project Experience</small></li>
+                        </ul>
+                    </article>
+                    <article class="stack-card">
+                        <div class="stack-card-header"><span aria-hidden="true">👁️</span><h3>AI &amp; Vision</h3></div>
+                        <ul class="stack-list">
+                            <li><span>YOLO · OpenCV</span><small>Project Experience</small></li>
+                            <li><span>Model Inference</span><small>Project Experience</small></li>
+                            <li><span>Local AI</span><small>Exploring</small></li>
+                        </ul>
+                    </article>
+                    <article class="stack-card">
+                        <div class="stack-card-header"><span aria-hidden="true">🔧</span><h3>Embedded &amp; Tools</h3></div>
+                        <ul class="stack-list">
+                            <li><span>ESP32 · Sensor · Servo</span><small>Learning</small></li>
+                            <li><span>Git · GitHub · VS Code</span><small>Comfortable</small></li>
+                            <li><span>Docker · Linux</span><small>Project Experience</small></li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-alt" id="journey" aria-labelledby="journey-title">
+            <div class="container">
+                <div class="section-header">
+                    <div class="badge">My Journey</div>
+                    <h2 class="section-title" id="journey-title">Learning by Building</h2>
+                    <p class="section-desc">Perjalanan yang terus berkembang dari fondasi pemrograman menuju sistem lintas software dan hardware.</p>
+                </div>
+
+                <ol class="journey-track">
+                    <li><span class="journey-year">2024</span><h3>Computer Engineering</h3><p>Memulai studi dan membangun fondasi ilmu komputer.</p></li>
+                    <li><span class="journey-year">2025</span><h3>Programming Fundamentals</h3><p>Mendalami C++, algoritma, dan dasar pemrograman.</p></li>
+                    <li><span class="journey-year">2026</span><h3>Web &amp; Backend</h3><p>Membangun aplikasi, API, database, dan deployment.</p></li>
+                    <li><span class="journey-year">Now</span><h3>AI &amp; Robotics</h3><p>Mengeksplorasi YOLO, local AI, ESP32, dan robotika.</p></li>
+                </ol>
+            </div>
+        </section>
+
+        <section class="section" aria-labelledby="beyond-title">
+            <div class="container beyond-layout">
+                <div>
+                    <div class="badge">Beyond Code</div>
+                    <h2 class="section-title" id="beyond-title">What Keeps Me Curious</h2>
+                    <p class="section-desc">Saya tertarik pada bagaimana software, hardware, dan kecerdasan buatan bisa bekerja sebagai satu sistem.</p>
+                </div>
+                <ul class="interest-list">
+                    <li><span aria-hidden="true">🤖</span>Robotics</li>
+                    <li><span aria-hidden="true">🧠</span>Competitive Programming</li>
+                    <li><span aria-hidden="true">🐧</span>Linux &amp; Servers</li>
+                    <li><span aria-hidden="true">🔌</span>Electronics</li>
+                    <li><span aria-hidden="true">🚀</span>Exploring AI</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section cta-section">
+            <div class="container cta-card">
+                <p class="eyebrow">Let's build something</p>
+                <h2>Punya ide atau ingin bertukar cerita teknologi?</h2>
+                <p>Saya terbuka untuk kolaborasi, diskusi proyek, dan kesempatan belajar.</p>
+                <div class="hero-actions">
+                    <a href="contact.html" class="button">Get in Touch</a>
+                    <a href="https://github.com/Marshel2727" class="button button-outline" target="_blank" rel="noopener noreferrer">Explore GitHub</a>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- Footer -->
     <footer class="site-footer">
         <div class="container footer-content">
-            <p class="footer-text">© 2026 Marshel. Hak Cipta Dilindungi.</p>
+            <p class="footer-text">© 2026 Marshel. Built while learning.</p>
             <ul class="footer-links">
-                <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="project.html">Project</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="#journey">Journey</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="https://github.com/Marshel2727" target="_blank" rel="noopener noreferrer">GitHub</a></li>
             </ul>
         </div>
     </footer>
+    <script src="js/main.js"></script>
 </body>
 </html>
