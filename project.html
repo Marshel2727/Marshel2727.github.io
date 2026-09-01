@@ -14,12 +14,12 @@
     <header class="site-header">
         <nav class="navbar container" aria-label="Navigasi utama">
             <a class="brand" href="index.html">Marshel<span class="brand-dot">.</span></a>
-            <button class="menu-toggle" aria-label="Buka menu navigasi" aria-expanded="false">
+            <button class="menu-toggle" type="button" aria-label="Buka menu navigasi" aria-expanded="false" aria-controls="primary-navigation">
                 <span class="hamburger-bar"></span>
                 <span class="hamburger-bar"></span>
                 <span class="hamburger-bar"></span>
             </button>
-            <ul class="nav-links">
+            <ul class="nav-links" id="primary-navigation">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a class="active" href="project.html" aria-current="page">Projects</a></li>
@@ -32,99 +32,145 @@
         <!-- Page Header -->
         <section class="page-hero section-alt">
             <div class="container section-header">
-                <div class="badge">Selected Work</div>
-                <h1 class="section-title">Projects That Tell My Story</h1>
-                <p class="section-desc">Bukan sekadar daftar teknologi—setiap project mewakili masalah nyata, solusi yang saya temukan, dan hal baru yang saya pelajari.</p>
+                <div class="badge">Karya Pilihan</div>
+                <h1 class="section-title">Project yang Menceritakan Perjalanan Saya</h1>
+                <p class="section-desc">Setiap project mewakili masalah nyata, sistem yang saya bangun, dan pelajaran teknis yang saya dapatkan.</p>
             </div>
         </section>
 
         <!-- Featured Case Studies -->
         <section class="section" aria-labelledby="case-studies-title">
             <div class="container">
-                <div class="section-header" style="text-align:left; margin-bottom:32px;">
-                    <div class="badge">Featured Case Studies</div>
-                    <h2 class="section-title" id="case-studies-title">Main Projects</h2>
-                    <p class="section-desc" style="text-align:left;">Tiga proyek utama yang mewakili web system, computer vision, dan local AI.</p>
+                <div class="section-header project-section-header">
+                    <div class="badge">Studi Kasus Pilihan</div>
+                    <h2 class="section-title" id="case-studies-title">Project Utama</h2>
+                    <p class="section-desc">Tiga project yang mewakili web system, computer vision, dan AI lokal.</p>
                 </div>
 
                 <div class="case-study-list">
-
-                    <!-- Case Study 01 -->
                     <article class="case-study" id="entok-monitoring">
-                        <div class="case-study-number">01</div>
-                        <div class="case-study-main">
-                            <p class="eyebrow">Web System · Active Development</p>
-                            <h3>Entok Monitoring System</h3>
-                            <p class="case-summary">Aplikasi web untuk membantu monitoring dan pengelolaan data operasional peternakan.</p>
-                            <div class="project-tags">
-                                <span class="tag">TypeScript</span>
-                                <span class="tag">Web API</span>
-                                <span class="tag">Database</span>
-                                <span class="tag">Deployment</span>
+                        <div class="case-study-visual-column">
+                            <span class="case-study-number" aria-hidden="true">01</span>
+                            <figure class="project-proof">
+                                <div class="proof-image-frame">
+                                    <img src="assets/images/projects/entok-monitoring.png" width="1200" height="630" loading="lazy" alt="Artwork resmi Entok Monitoring tentang pengelolaan pakan entok berbasis data">
+                                    <span class="proof-status">Demo sedang offline</span>
+                                </div>
+                                <figcaption><strong>Aset resmi project</strong><span>Repository tetap dapat diakses</span></figcaption>
+                            </figure>
+                        </div>
+
+                        <div class="case-study-content">
+                            <div class="case-study-title-row">
+                                <div>
+                                    <p class="eyebrow">Sistem Web · Peternakan</p>
+                                    <h3>Entok Monitoring System</h3>
+                                </div>
+                                <span class="status-pill status-warning">Demo offline</span>
                             </div>
+                            <p class="case-summary">Sistem monitoring peternakan yang menghubungkan dashboard, proses operasional penjaga, dan pembacaan timbangan IoT.</p>
+                            <div class="project-tags">
+                                <span class="tag">Next.js</span>
+                                <span class="tag">Flask</span>
+                                <span class="tag">MySQL</span>
+                                <span class="tag">REST API</span>
+                            </div>
+                            <dl class="case-study-details">
+                                <div><dt>Tantangan</dt><dd>Menyatukan komposisi pakan, formulasi, checklist penjaga, dan data timbangan dalam satu alur kerja.</dd></div>
+                                <div><dt>Yang dibangun</dt><dd>Frontend Next.js, REST API Flask, database MySQL, serta endpoint pembacaan timbangan dan batch racikan.</dd></div>
+                                <div><dt>Kontribusi</dt><dd>Pengembangan web, integrasi API, penyusunan alur data, dan deployment aplikasi.</dd></div>
+                                <div><dt>Status &amp; bukti</dt><dd>Source code aktif tersedia di GitHub. Deployment Vercel publik sedang tidak tersedia.</dd></div>
+                            </dl>
                             <div class="project-actions">
-                                <a class="button button-sm" href="https://entok-monitoring.vercel.app" target="_blank" rel="noopener noreferrer">Live Demo ↗</a>
-                                <a class="button button-outline button-sm" href="https://github.com/Marshel2727/entok-monitoring" target="_blank" rel="noopener noreferrer">GitHub</a>
+                                <a class="button button-sm" href="https://github.com/Marshel2727/entok-monitoring" target="_blank" rel="noopener noreferrer">Lihat Repository ↗</a>
+                                <span class="project-action-note">Demo publik belum tersedia</span>
                             </div>
                         </div>
-                        <dl class="case-study-details">
-                            <div><dt>Problem</dt><dd>Informasi peternakan perlu dicatat dan dipantau secara lebih terstruktur.</dd></div>
-                            <div><dt>Solution</dt><dd>Membangun sistem web yang menyatukan proses monitoring dan manajemen data.</dd></div>
-                            <div><dt>My Role</dt><dd>Web development, system integration, dan deployment.</dd></div>
-                            <div><dt>Learning</dt><dd>Menghubungkan frontend, API, database, dan kebutuhan operasional nyata.</dd></div>
-                        </dl>
                     </article>
 
-                    <!-- Case Study 02 -->
                     <article class="case-study" id="vision-entok">
-                        <div class="case-study-number">02</div>
-                        <div class="case-study-main">
-                            <p class="eyebrow">AI &amp; Computer Vision</p>
-                            <h3>Vision Entok</h3>
-                            <p class="case-summary">Eksperimen computer vision untuk mendeteksi objek pada sistem peternakan menggunakan model YOLO.</p>
+                        <div class="case-study-visual-column">
+                            <span class="case-study-number" aria-hidden="true">02</span>
+                            <figure class="project-proof project-proof-logo">
+                                <div class="vision-logo-wrap">
+                                    <img src="assets/images/projects/vision-entok.png" width="256" height="256" loading="lazy" alt="Logo resmi aplikasi Entok Vision">
+                                    <div class="visual-tech-list" aria-label="Kemampuan utama Entok Vision">
+                                        <span>RTSP / Webcam</span><span>YOLO</span><span>ONVIF PTZ</span><span>Windows</span>
+                                    </div>
+                                </div>
+                                <figcaption><strong>Identitas aplikasi</strong><span>Desktop lokal, bukan diagnosis veteriner</span></figcaption>
+                            </figure>
+                        </div>
+
+                        <div class="case-study-content">
+                            <div class="case-study-title-row">
+                                <div>
+                                    <p class="eyebrow">AI · Computer Vision</p>
+                                    <h3>Entok Vision</h3>
+                                </div>
+                                <span class="status-pill">Desktop lokal</span>
+                            </div>
+                            <p class="case-summary">Aplikasi desktop untuk penyaringan awal kondisi mata entok dari CCTV RTSP atau webcam menggunakan YOLO.</p>
                             <div class="project-tags">
                                 <span class="tag">Python</span>
                                 <span class="tag">YOLO</span>
                                 <span class="tag">OpenCV</span>
-                                <span class="tag">Model Inference</span>
+                                <span class="tag">ONVIF</span>
                             </div>
+                            <dl class="case-study-details">
+                                <div><dt>Tantangan</dt><dd>Memproses aliran kamera secara stabil sambil menjaga hasil AI sebagai penyaringan awal, bukan diagnosis.</dd></div>
+                                <div><dt>Yang dibangun</dt><dd>GUI desktop, input RTSP/webcam, pemilihan model, penyimpanan screenshot, dan kontrol PTZ melalui ONVIF.</dd></div>
+                                <div><dt>Kontribusi</dt><dd>Integrasi inference, sumber kamera, antarmuka desktop, pengujian, dan packaging Windows.</dd></div>
+                                <div><dt>Status &amp; bukti</dt><dd>Source, konfigurasi training, test, serta script build CPU/GPU tersedia di repository.</dd></div>
+                            </dl>
                             <div class="project-actions">
-                                <a class="button button-outline button-sm" href="https://github.com/Marshel2727/vision-entok" target="_blank" rel="noopener noreferrer">GitHub Repository ↗</a>
+                                <a class="button button-sm" href="https://github.com/Marshel2727/vision-entok" target="_blank" rel="noopener noreferrer">Lihat Repository ↗</a>
                             </div>
                         </div>
-                        <dl class="case-study-details">
-                            <div><dt>Problem</dt><dd>Monitoring visual manual sulit dilakukan secara konsisten dalam aliran video.</dd></div>
-                            <div><dt>Solution</dt><dd>Mengeksplorasi deteksi objek berbasis YOLO melalui aplikasi lokal dan sumber video kamera.</dd></div>
-                            <div><dt>My Role</dt><dd>Eksperimen model, integrasi inference, dan pengembangan antarmuka.</dd></div>
-                            <div><dt>Learning</dt><dd>Dataset, model deployment, pemrosesan frame, dan batas performa perangkat.</dd></div>
-                        </dl>
                     </article>
 
-                    <!-- Case Study 03 -->
                     <article class="case-study" id="translator-ai">
-                        <div class="case-study-number">03</div>
-                        <div class="case-study-main">
-                            <p class="eyebrow">Local AI · Translation</p>
-                            <h3>Mars Web Translator AI</h3>
-                            <p class="case-summary">Eksperimen penerjemahan berbasis model AI lokal yang menghubungkan antarmuka web, API, dan inference.</p>
-                            <div class="project-tags">
-                                <span class="tag">JavaScript</span>
-                                <span class="tag">FastAPI</span>
-                                <span class="tag">REST API</span>
-                                <span class="tag">Local AI</span>
+                        <div class="case-study-visual-column">
+                            <span class="case-study-number" aria-hidden="true">03</span>
+                            <figure class="project-proof project-proof-flow">
+                                <div class="translator-flow" role="img" aria-label="Alur sistem: halaman web menuju extension browser, FastAPI lokal, Ollama Qwen3 di GPU, lalu QA dan cache">
+                                    <span>Halaman Web</span><b aria-hidden="true">↓</b>
+                                    <span>Extension MV3</span><b aria-hidden="true">↓</b>
+                                    <span>FastAPI Lokal</span><b aria-hidden="true">↓</b>
+                                    <span>Ollama · Qwen3 GPU</span><b aria-hidden="true">↓</b>
+                                    <span>QA · Glossary · Cache</span>
+                                </div>
+                                <figcaption><strong>Alur sistem</strong><span>Berdasarkan dokumentasi repository</span></figcaption>
+                            </figure>
+                        </div>
+
+                        <div class="case-study-content">
+                            <div class="case-study-title-row">
+                                <div>
+                                    <p class="eyebrow">AI Lokal · Penerjemahan</p>
+                                    <h3>Mars Web Translator AI</h3>
+                                </div>
+                                <span class="status-pill status-warning">v0.3.0-dev.1</span>
                             </div>
+                            <p class="case-summary">Penerjemah dokumentasi teknis lokal yang mempertahankan kode, command, URL, dan istilah teknis tanpa mengirim isi halaman ke layanan cloud.</p>
+                            <div class="project-tags">
+                                <span class="tag">Extension MV3</span>
+                                <span class="tag">FastAPI</span>
+                                <span class="tag">Ollama</span>
+                                <span class="tag">Qwen3 8B</span>
+                            </div>
+                            <dl class="case-study-details">
+                                <div><dt>Tantangan</dt><dd>Menerjemahkan teks teknis sambil menjaga code, command, URL, placeholder, dan nama API tetap utuh.</dd></div>
+                                <div><dt>Yang dibangun</dt><dd>Extension Chromium, API FastAPI lokal, pipeline Ollama/Qwen3, cache browser dan SQLite, glossary, serta validasi output.</dd></div>
+                                <div><dt>Kontribusi</dt><dd>Integrasi extension, kontrak API, workflow model lokal, autentikasi localhost, dan QA hasil terjemahan.</dd></div>
+                                <div><dt>Status &amp; bukti</dt><dd>Versi development dengan GPU wajib; arsitektur, test, roadmap, dan source tersedia di repository.</dd></div>
+                            </dl>
                             <div class="project-actions">
-                                <a class="button button-outline button-sm" href="https://github.com/Marshel2727/mars-web-translator-ai" target="_blank" rel="noopener noreferrer">GitHub Repository ↗</a>
+                                <a class="button button-sm" href="https://github.com/Marshel2727/mars-web-translator-ai" target="_blank" rel="noopener noreferrer">Lihat Repository ↗</a>
+                                <a class="button button-outline button-sm" href="https://github.com/Marshel2727/mars-web-translator-ai/blob/main/docs/architecture.md" target="_blank" rel="noopener noreferrer">Baca Arsitektur</a>
                             </div>
                         </div>
-                        <dl class="case-study-details">
-                            <div><dt>Problem</dt><dd>Eksperimen penerjemahan membutuhkan alur yang menghubungkan halaman web dengan model lokal.</dd></div>
-                            <div><dt>Solution</dt><dd>Membangun integrasi frontend dan layanan API untuk memproses terjemahan melalui AI lokal.</dd></div>
-                            <div><dt>My Role</dt><dd>Frontend integration, API workflow, dan pengujian model lokal.</dd></div>
-                            <div><dt>Learning</dt><dd>Kontrak API, autentikasi lokal, error handling, dan inference workflow.</dd></div>
-                        </dl>
                     </article>
-
                 </div>
             </div>
         </section>
@@ -133,53 +179,53 @@
         <section class="section section-alt" aria-labelledby="explorations-title">
             <div class="container">
                 <div class="section-header">
-                    <div class="badge">More Explorations</div>
-                    <h2 class="section-title" id="explorations-title">Learning in Public</h2>
-                    <p class="section-desc">Eksperimen dan karya akademik yang menunjukkan arah belajar saya di luar tiga project utama.</p>
+                    <div class="badge">Eksperimen Lain</div>
+                    <h2 class="section-title" id="explorations-title">Belajar secara Terbuka</h2>
+                    <p class="section-desc">Eksperimen dan karya akademik yang melengkapi tiga project utama.</p>
                 </div>
 
                 <div class="projects-grid">
                     <article class="project-card">
                         <div class="project-banner" aria-hidden="true">🧠</div>
-                        <p class="eyebrow">AI Experiments</p>
+                        <p class="eyebrow">Eksperimen AI</p>
                         <h3 class="project-title">Mars Web AI Local</h3>
                         <p class="project-desc">Eksperimen menghubungkan aplikasi web dengan kemampuan AI yang berjalan secara lokal.</p>
                         <div class="project-footer">
-                            <span class="status-pill">Exploring</span>
-                            <a class="project-link" href="https://github.com/Marshel2727/mars-web-ai-local" target="_blank" rel="noopener noreferrer">GitHub →</a>
+                            <span class="status-pill">Eksperimen</span>
+                            <a class="project-link" href="https://github.com/Marshel2727/mars-web-ai-local" target="_blank" rel="noopener noreferrer">Repository ↗</a>
                         </div>
                     </article>
 
-                    <article class="project-card">
+                    <article class="project-card project-card-static">
                         <div class="project-banner" aria-hidden="true">🤖</div>
-                        <p class="eyebrow">Hardware &amp; Robotics</p>
+                        <p class="eyebrow">Hardware &amp; Robotika</p>
                         <h3 class="project-title">ESP32 Robot Experiments</h3>
                         <p class="project-desc">Eksplorasi mikrokontroler, sensor ultrasonik, servo, dan kontrol robot sebagai proses belajar embedded systems.</p>
                         <div class="project-footer">
-                            <span class="status-pill">Learning</span>
-                            <span class="project-note">Hardware Experiment</span>
+                            <span class="status-pill status-muted">Belum dipublikasikan</span>
+                            <span class="project-note">Eksperimen hardware</span>
                         </div>
                     </article>
 
-                    <article class="project-card">
+                    <article class="project-card project-card-static">
                         <div class="project-banner" aria-hidden="true">⌨️</div>
-                        <p class="eyebrow">Algorithms</p>
+                        <p class="eyebrow">Algoritma</p>
                         <h3 class="project-title">Competitive Programming</h3>
                         <p class="project-desc">Latihan C++, struktur data, algoritma, dan problem solving untuk memperkuat fondasi berpikir komputasional.</p>
                         <div class="project-footer">
-                            <span class="status-pill">Ongoing</span>
-                            <span class="project-note">Learning Track</span>
+                            <span class="status-pill status-muted">Belum dipublikasikan</span>
+                            <span class="project-note">Latihan berkelanjutan</span>
                         </div>
                     </article>
 
                     <article class="project-card">
                         <div class="project-banner" aria-hidden="true">🎓</div>
-                        <p class="eyebrow">Academic Work</p>
+                        <p class="eyebrow">Karya Akademik</p>
                         <h3 class="project-title">Semester 3 Repository</h3>
                         <p class="project-desc">Dokumentasi tugas dan latihan perkuliahan sebagai jejak perkembangan akademik dan praktik pemrograman.</p>
                         <div class="project-footer">
-                            <span class="status-pill">Academic</span>
-                            <a class="project-link" href="https://github.com/Marshel2727/Semester3Marshel" target="_blank" rel="noopener noreferrer">GitHub →</a>
+                            <span class="status-pill">Akademik</span>
+                            <a class="project-link" href="https://github.com/Marshel2727/Semester3Marshel" target="_blank" rel="noopener noreferrer">Repository ↗</a>
                         </div>
                     </article>
                 </div>
@@ -190,12 +236,12 @@
         <section class="section">
             <div class="container">
                 <div class="cta-card">
-                    <p class="eyebrow">More on GitHub</p>
-                    <h2>Project saya terus berkembang.</h2>
-                    <p>Lihat repository lain, riwayat commit, dan eksperimen terbaru langsung di GitHub.</p>
+                    <p class="eyebrow">Mari Berdiskusi</p>
+                    <h2>Tertarik membahas web, AI, atau embedded systems?</h2>
+                    <p>Saya terbuka untuk bertukar ide, mendiskusikan project, dan belajar melalui kolaborasi teknis.</p>
                     <div class="cta-actions">
-                        <a href="https://github.com/Marshel2727?tab=repositories" class="button" target="_blank" rel="noopener noreferrer">View All Repositories</a>
-                        <a href="contact.html" class="button button-outline">Start a Conversation</a>
+                        <a href="https://github.com/Marshel2727?tab=repositories" class="button" target="_blank" rel="noopener noreferrer">Lihat Semua Repository</a>
+                        <a href="contact.html" class="button button-outline">Hubungi Saya</a>
                     </div>
                 </div>
             </div>

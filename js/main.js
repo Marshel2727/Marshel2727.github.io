@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const expanded = isOpen !== undefined ? isOpen : menuToggle.getAttribute('aria-expanded') !== 'true';
         
         menuToggle.setAttribute('aria-expanded', String(expanded));
+        menuToggle.setAttribute('aria-label', expanded ? 'Tutup menu navigasi' : 'Buka menu navigasi');
         menuToggle.classList.toggle('active', expanded);
         navLinks.classList.toggle('open', expanded);
         
